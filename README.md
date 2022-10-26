@@ -1,7 +1,7 @@
 # leetx: 1337x scraper for Deno
 
 ```ts
-import fullDetailsSearch from "./mod.ts";
+import fullDetailsSearch from "https://deno.land/x/leetx@v1.0.0/mod.ts";
 
 const search = await fullDetailsSearch("ubuntu iso");
 const names = search.map((t) => t.name);
@@ -17,7 +17,7 @@ console.log({ names });
 `getFirstPartialtorrents(searchKeyword: string)` takes a search keyword and returns an array of `FirstPartialTorrent`
 
 ```ts
-import { getFirstPartialtorrents } from "./mod.ts";
+import { getFirstPartialtorrents } from "https://deno.land/x/leetx@v1.0.0/mod.ts";
 
 const res = getFirstPartialtorrents("ubuntu iso");
 
@@ -41,7 +41,7 @@ const res = getFirstPartialtorrents("ubuntu iso");
 `getExtraDetails(url: string)` takes a torrent url from 1337x (i.e. FirstPartialTorrent[0]["url"]) and returns `ExtraDetails`
 
 ```ts
-import { getExtraDetails } from "./mod.ts";
+import { getExtraDetails } from "https://deno.land/x/leetx@v1.0.0/mod.ts";
 
 //
 const res = getExtraDetails(
