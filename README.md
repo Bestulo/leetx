@@ -64,3 +64,5 @@ const res = getExtraDetails(
 ## Credits
 
 The first 7 or so lines I copied from https://github.com/mikekok/leetx
+
+I also took the name.
