@@ -1,6 +1,6 @@
-# 1337x scraper for Deno
+# leetx: 1337x scraper for Deno
 
-```
+```ts
 import fullDetailsSearch from "./mod.ts";
 
 const search = await fullDetailsSearch("ubuntu iso");
@@ -16,10 +16,10 @@ console.log({ names });
 
 `getFirstPartialtorrents(searchKeyword: string)` takes a search keyword and returns an array of `FirstPartialTorrent`
 
-```
-import { getFirstPartialtorrents } from './mod.ts';
+```ts
+import { getFirstPartialtorrents } from "./mod.ts";
 
-const res = getFirstPartialtorrents("ubuntu iso")
+const res = getFirstPartialtorrents("ubuntu iso");
 
 /* res type (FirstPartialTorrent[]):
 {
@@ -40,11 +40,13 @@ const res = getFirstPartialtorrents("ubuntu iso")
 
 `getExtraDetails(url: string)` takes a torrent url from 1337x (i.e. FirstPartialTorrent[0]["url"]) and returns `ExtraDetails`
 
-```
-import { getExtraDetails } from './mod.ts';
+```ts
+import { getExtraDetails } from "./mod.ts";
 
 //
-const res = getExtraDetails("https://1337x.to/torrent/2091948/Ubuntu-16-10-LTS-Yakkety-Yak-Unity-x32-i386-Desktop-ISO-Uzerus/")
+const res = getExtraDetails(
+  "https://1337x.to/torrent/2091948/Ubuntu-16-10-LTS-Yakkety-Yak-Unity-x32-i386-Desktop-ISO-Uzerus/"
+);
 
 /* res type (ExtraDetails[]):
 {
